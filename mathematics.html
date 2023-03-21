@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Математика</title>
+
+    <link rel="stylesheet" href="css/for-all-pages.css">
+    <link rel="stylesheet" href="css/mathematics.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+
+    <div class="preloader">
+        <img src="imgs/preloader.svg" alt="preloader">
+    </div>
+
+    <div id="wrapper">
+
+        <header>
+            <nav>
+                <!--#include virtual="includes/nav.html" -->
+            </nav>
+        </header>
+
+        <main class="container">
+
+            <h1>Задачи по высшей математике</h1>
+
+            <ol class="main-list">
+                <li>
+                    Вычислить определители 3-го порядка:
+                    $$
+                    \begin{vmatrix}
+                    3 & 2 & -1 \\
+                    -2 & 2 & 3 \\
+                    4 & 2 & -3 \\
+                    \end{vmatrix}
+                    $$
+                </li>
+
+                <li>
+                    Исследовать системы линейных уравнений, для совместных систем найти общее и одно частное решения:
+                    $$
+                    \left\{
+                    \begin{array}{c}
+                    4x-3y+2z=9\\
+                    2x+5y-3z=4\\
+                    5x+6y-2z=18\\
+                    \end{array}
+                    \right.
+                    $$
+                </li>
+
+                <li class="display-inline">
+                    Даны вершины треугольника $$A(2;3;&minus;1)$$, $$B(4;1;&minus;2)$$ и $$C(1;0;2)$$. Найти:
+                    <ol type="a">
+                        <li>внутренний угол при вершине С;</li>
+                        <li>пр&nbsp;<sub class="line-top-side">CA</sub><span class="line-top-side">&nbsp;CB.</span></li>
+                    </ol>
+                </li>
+
+                <li class="display-inline">
+                    Найти уравнение прямой, проходящей через точку пересечения прямых $$ x+y-1=0 $$ и $$ x+2y+1=0 $$ и
+                    отсекающей на отрицательной части оси O<sub>y</sub> отрезок, равный 2.
+                </li>
+
+                <li class="display-inline">
+                    Через точку пересечения прямых $$ 3x-2y+5=0 $$, $$ x+2y-9=0 $$ проведена прямая, параллельная прямой
+                    $$ 2x+y+6=0 $$. Составить ее уравнение.
+                </li>
+
+                <li class="display-inline">
+                    Дано уравнение эллипса: $$ 24x^2+49y^2=1176. $$ Найти:
+                    <ol type="a">
+                        <li>длины его полуосей;</li>
+                        <li>координаты фокусов;</li>
+                        <li>эксцентриситет эллипса;</li>
+                        <li>уравнения директрис и расстояние между ними;</li>
+                        <li>точки эллипса, расстояние от которых до левого фокуса F<sub>1</sub> равно 12;</li>
+                    </ol>
+                </li>
+
+                <li class="display-inline">
+                    Составить уравнение плоскости, проходящей через точки $$ M_1(-1;3;0) $$ и $$ M_2(2;4;-1), $$
+                    перпендикулярно плоскости $$ x-2y+3z-10=0. $$
+                </li>
+
+                <li class="display-inline space-between-list-items">
+                    Используя свойства пределов функций, найти следующие пределы:
+                    <ol type="a">
+                        <li>
+                            $$
+                            \lim_{x\to-1}
+                            \frac{3x^2-1}{4x^2+5x+2}
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            \lim_{x\to2}
+                            \frac{x^2-4}{x^2-5x+6}
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            \lim_{x\to1}
+                            \frac{\sqrt{x+8}-3}{x-1}
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            \lim_{x\to\infty}
+                            \frac{1+x-x^2}{2x^2+3x}
+                            $$
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="display-inline space-between-list-items">
+                    Найти пределы:
+                    <ol type="a">
+                        <li>
+                            $$
+                            \lim_{x\to0}
+                            \frac{sin \ \alpha x}{x},
+                            \alpha \in R
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            \lim_{x\to0}
+                            \frac{sin \ 5x}{sin \ 3x}
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            \lim_{x\to \pi/2}
+                            \frac{cos \ x}{2x-\pi}
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            \lim_{x\to0}
+                            \frac{arcsin \ x}{x}
+                            $$
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="display-inline space-between-list-items">
+                    Найти пределы:
+                    <ol type="a">
+                        <li>
+                            $$
+                            \lim_{x\to \infty}
+                            (1+ \frac{k}{x})^x, k \in R
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            \lim_{x\to0}
+                            \sqrt[x]{1+5x}
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            \lim_{x\to \infty}
+                            (\frac{x+3}{x-2})^x
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            \lim_{x\to0}
+                            \frac{e^{2x}-1}{7x}
+                            $$
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="display-inline space-between-list-items">
+                    Найти производные функций:
+                    <ol type="a">
+                        <li>
+                            $$
+                            y=ln \sqrt{\frac{1+tg \ x}{1-tg \ x}}
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            y=cos \frac{1- \sqrt x}{1+ \sqrt x}
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            y=e^{sh^2 \ 5x}
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            y=x^{sin \ x}
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            x^3+y^3=sin(x-2y)
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            x=5 \ ch \ t, y=4 \ sh \ t
+                            $$
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="display-inline">
+                    Провести полное исследование функции $$ f(x)=e^{\frac{1}{x-2}} $$ и построить ее график.
+                </li>
+
+                <li class="display-inline space-between-list-items">
+                    Найти интегралы, используя подходящую подстановку:
+                    <ol type="a">
+                        <li>
+                            $$
+                            \int \sqrt{4x-5}dx
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            \int sin^3x \cdot cosx \ dx
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            \int \frac{ln^5x \ dx}{x}
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            \int \frac{x^2 \ dx}{x^3+1}
+                            $$
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="display-inline space-between-list-items">
+                    Найти интеграл, используя интегрирование по частям:
+                    <ol type="a">
+                        <li>
+                            $$
+                            \int x \cdot e^x \ dx
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            \int lnx \ dx
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            \int x^2 \ cosx \ dx
+                            $$
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="display-inline space-between-list-items">
+                    Найти интегралы:
+                    <ol type="a">
+                        <li>
+                            $$
+                            \int \frac{2x-3}{(x-5)(x+2)}dx
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            \int \frac{dx}{x^4+x^2}
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            \int \frac{dx}{x^3-8}
+                            $$
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="display-inline space-between-list-items">
+                    Найти интегралы:
+                    <ol type="a">
+                        <li>
+                            $$
+                            \int \frac{\sqrt[3]{x}dx}{\sqrt[3]{x^2}-\sqrt{x}}
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            \int \frac{dx}{\sqrt[3]{(2x+1)^2}-\sqrt{2x+1}}
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            \int \frac{\sqrt{x}}{x^2 \cdot \sqrt{x-1}}dx
+                            $$
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="display-inline space-between-list-items">
+                    Найти интегралы:
+                    <ol type="a">
+                        <li>
+                            $$
+                            \int \frac{dx}{5 \ cosx+3}
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            \int \frac{dx}{sin^5x \cdot cosx}
+                            $$
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="display-inline">
+                    Вычислить несобственный интеграл $$ \int_1^ {+\infty} \frac{dx}{x^2} $$ или установить его
+                    расходимость.
+                </li>
+
+                <li>
+                    Найти длину астроиды:
+                    $$
+                    \left\{
+                    \begin{array}{c}
+                    x=\alpha \ cos^3 \ t\\
+                    y=\alpha \ sin^3 \ t\\
+                    \end{array}
+                    \right.
+                    $$
+                </li>
+
+                <li class="display-inline">
+                    Найти объем тела, ограниченного двумя цилиндрами $$ x^2+y^2=R^2 $$ и $$ x^2+z^2=R^2. $$
+                </li>
+
+                <li class="display-inline">
+                    Найти площадь поверхности шара радиуса $$ R $$, рассматривая его как тело вращения.
+                </li>
+
+                <li class="display-inline">
+                    Вычислить массу и момент инерции плоского однородного стержня ($$ \gamma =1 $$) длины $$ l $$
+                    относительно его конца.
+                </li>
+
+                <li class="display-inline space-between-list-items">
+                    Представить в показательной форме комплексные числа:
+                    <ol type="a">
+                        <li>
+                            $$ 12i $$
+                        </li>
+                        <li>
+                            $$ 1-\sqrt{3} $$
+                        </li>
+                        <li>
+                            $$ -4-3i $$
+                        </li>
+                        <li>
+                            $$
+                            sin \frac{ \pi}{3}+i \cos\frac{ \pi}{3}
+                            $$
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="display-inline">
+                    Вычислить предел:
+                    $$
+                    \lim_{x\to1, \ y\to1}
+                    \frac{sin(x+2y-3)}{(x+2y)^2-9}
+                    $$
+                </li>
+
+                <li class="display-inline space-between-list-items">
+                    Найти частные производные данных функций:
+                    <ol type="a">
+                        <li>
+                            $$ z=e^{x^2+y^2} $$
+                        </li>
+                        <li>
+                            $$ v=x^4cos^2y-y^4sin^3x^5 $$
+                        </li>
+                        <li>
+                            $$ u=x^y+(xy)^z+z^{xy} $$
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="display-inline">
+                    Найти производную функции $$ z=2,5x^2-5xy+3y^2+5y $$ в точке $$A(1;2)$$ в направлении, составляющем с
+                    осью Ox угол 30&#176;. Определить направление максимального роста данной функции в данной точке.
+                </li>
+
+                <li class="display-inline">
+                    Исследовать на экстремум функцию
+                    $$
+                    f(x;y)=4x^2y+24xy+$$ $$y^2+32y-6.
+                    $$
+                </li>
+
+                <li class="display-inline space-between-list-items">
+                    Исследовать ряды на сходимость, применяя признак Коши:
+                    <ol type="a">
+                        <li>
+                            $$
+                            \sum_{n=1}^\infty {( \frac{n+2}{2n+1}})^{3n+1}
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            \sum_{n=1}^\infty n \cdot {(1- \frac{1}{n}})^{n^2}
+                            $$
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="display-inline">
+                    Найти область сходимости ряда
+                    $$
+                    \sum_{n=1}^\infty \frac{(2-x)^n}{n+1}
+                    $$
+                </li>
+
+                <li class="display-inline">
+                    Разложить в ряд Фурье функцию
+                    $$
+                    f(x)= \left\{
+                    \begin{array}{c}
+                    2, \ -\pi&lt;x&lt;0\\
+                    -4, \ 0&lt;x&lt; \pi\\
+                    \end{array}
+                    \right.
+                    $$
+                </li>
+
+                <li>
+                    Решить уравнения:
+                    $$
+                    y=xy'+y'-(y')^2
+                    $$
+                    $$
+                    y=xy'-3(y')^3
+                    $$
+                </li>
+
+                <li class="display-inline space-between-list-items">
+                    Вычислить двойной интеграл по данной области D:
+                    <ol type="a">
+                        <li>
+                            $$
+                            \iint_D \frac {dxdy}{(x+y+1)^2}
+                            $$,
+                            где D: $$ 0 \leq x \leq 1, \
+                            0 \leq y \leq 1
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            \iint_D \frac {x \ dxdy}{x^2+y^2}
+                            $$,
+                            где D: $$ 0 \leq x \leq 2, \
+                            x \leq y \leq x \sqrt{3}
+                            $$
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="display-inline space-between-list-items">
+                    Вычислить следующие тройные интегралы в прямоугольных координатах:
+                    <ol type="a">
+                        <li>
+                            $$
+                            \iiint_V (1-y)xz \ dxdydz
+                            $$,
+                            где V ограничена плоскостями $$ x=0, \ y=0, \ z=0, \ x+y+z=1
+                            $$
+                        </li>
+                        <li>
+                            $$
+                            \iiint_V x^2y^2z \ dxdydz
+                            $$,
+                            где V - параллелепипед, ограниченный плоскостями $$ x=1,\ x=3, \ y=0,$$ $$\ y=2, \ z=2, \ z=5
+                            $$
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+
+        </main>
+
+        <footer class="container">
+            <!--#include virtual="includes/footer.html" -->
+        </footer>
+
+    </div><!-- wrapper -->
+
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>

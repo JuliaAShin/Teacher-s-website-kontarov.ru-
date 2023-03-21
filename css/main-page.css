@@ -1,0 +1,300 @@
+.container {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.main-foto>div:first-child {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+#date {
+    margin-left: auto;
+    font-style: italic;
+}
+
+[src="imgs/KontarovNA.jpg"] {
+    border-radius: 3px;
+    float: right;
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    line-height: 150%;
+}
+
+h1 span {
+    font-size: 20px;
+}
+
+.margin-bottom-10px {
+    margin-bottom: 10px;
+}
+
+[src="imgs/whatsapp.png"] {
+    width: 50px;
+}
+
+.whats-app {
+    line-height: 50px;
+}
+
+.thank-you-letters-and-atom {
+    display: grid;
+    column-gap: 100px;
+    grid-template-columns: min-content 1fr;
+}
+
+.thank-you-letters {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 139px;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.thank-you-letters img {
+    width: 100%;
+}
+
+/*animated-atom*/
+
+.animated-atom-container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform: scale(0.85);
+}
+
+.nucleus,
+.orbit,
+.electron {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.nucleus {
+    background: var(--dark-grey);
+    animation: glowing 2s infinite linear;
+}
+
+.orbit:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.orbit {
+    width: 200px;
+    height: 200px;
+    border: 0;
+    transform-style: preserve-3d;
+    animation: orbit-moving 2s infinite linear;
+}
+
+.orbit .electron {
+    position: relative;
+    top: 97px;
+    width: 6px;
+    height: 6px;
+    background: darkred;
+    box-shadow: 0 0 5px darkred;
+    border-radius: 50%;
+    transform: translateX(100px);
+    animation: electron-moving 2s infinite linear;
+}
+
+.orbit:nth-child(4) {
+    transform: rotateY(65deg) rotateX(5deg);
+    animation-delay: -1s;
+}
+
+.orbit:nth-child(4) .electron {
+    animation-delay: -1s;
+}
+
+.orbit:nth-child(2) {
+    transform: rotateY(65deg) rotateX(-54deg);
+    animation-delay: -1s;
+    animation-duration: 1s;
+}
+
+.orbit:nth-child(2) .electron {
+    animation-duration: 2s;
+}
+
+.orbit:nth-child(3) {
+    transform: rotateY(65deg) rotateX(54deg);
+}
+
+@keyframes electron-moving {
+    0% {
+        transform: rotateZ(0deg) translateX(100px) rotateZ(0deg) rotateY(-65deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg) translateX(100px) rotateZ(-360deg) rotateY(-65deg);
+    }
+}
+
+@keyframes orbit-moving {
+    0% {
+        border: 0;
+        border-top: 2px solid var(--dark-grey);
+    }
+
+    35% {
+        border: 0;
+        border-right: 2px solid var(--dark-grey);
+    }
+
+    70% {
+        border: 0;
+        border-bottom: 2px solid var(--dark-grey);
+    }
+
+    100% {
+        border: 0;
+        border-left: 2px solid var(--dark-grey);
+    }
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 0 transparent;
+    }
+
+    50% {
+        box-shadow: 0 0 40px var(--mint);
+    }
+
+    100% {
+        box-shadow: 0 0 0 transparent;
+    }
+}
+
+
+/* lightBox -begin */
+
+.wrap {
+    display: none;
+}
+
+.wrap-visible {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    background: rgba(0, 0, 0, .5);
+}
+
+.wrap-anim {
+    animation: opacity ease-in 0.5s;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.box {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box img {
+    max-height: 100%;
+    max-width: 100%;
+    border: 5px solid white;
+    border-radius: 3px;
+}
+
+/* lightBox -end */
+
+
+@media (max-width: 900px) {
+
+    .thank-you-letters-and-atom {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .animated-atom-container {
+        transform: scale(0.7);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    [src="imgs/KontarovNA.jpg"] {
+        margin: 0 0 30px 30px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    main .container {
+        padding-bottom: 0;
+    }
+
+    .main-foto>div:first-child {
+        flex-direction: column;
+    }
+
+    [src="imgs/KontarovNA.jpg"] {
+        float: none;
+        width: 150px;
+        height: 150px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .thank-you-letters-and-atom {
+        grid-template-rows: 1fr min-content;
+    }
+
+    .thank-you-letters {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        padding: 30px 0;
+    }
+
+}

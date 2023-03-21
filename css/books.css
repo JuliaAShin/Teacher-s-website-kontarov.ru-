@@ -1,0 +1,18 @@
+.main-list {
+    line-height: 150%;
+}
+
+h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+ol {
+    list-style-position: inside;
+    margin-bottom: 20px;
+}
